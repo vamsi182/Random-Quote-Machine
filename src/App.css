@@ -1,0 +1,151 @@
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 18px;
+  background:
+    radial-gradient(circle at 15% 20%, #e6e8d5 0, transparent 35%),
+    radial-gradient(circle at 85% 85%, #d8e3d7 0, transparent 35%),
+    #f4f2eb;
+}
+
+#quote-box {
+  width: 100%;
+  max-width: 620px;
+  padding: 48px;
+  background: #fffefa;
+  border: 1px solid #e8e5dc;
+  border-radius: 8px;
+  box-shadow: 0 24px 70px rgba(46, 56, 42, 0.1);
+  color: #293b31;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #73836c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.quote-mark {
+  height: 75px;
+  margin-top: 22px;
+  color: #a1b69a;
+  font-family: Georgia, serif;
+  font-size: 100px;
+  line-height: 1;
+}
+
+#text {
+  min-height: 100px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.author-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.author-dash {
+  width: 28px;
+  height: 2px;
+  background: #8a9c7f;
+}
+
+#author {
+  color: #71806b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.divider {
+  height: 1px;
+  margin: 32px 0 24px;
+  background: #e9e7df;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+#tweet-quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #dfe4d9;
+  border-radius: 50%;
+  color: #536d4f;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#tweet-quote:hover {
+  background: #eaf0e5;
+  transform: translateY(-2px);
+}
+
+#new-quote {
+  padding: 15px 22px;
+  border: none;
+  border-radius: 5px;
+  background: #536d4f;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#new-quote:hover {
+  background: #40573d;
+  transform: translateY(-1px);
+}
+
+#new-quote span {
+  margin-left: 10px;
+}
+
+#new-quote:focus-visible,
+#tweet-quote:focus-visible {
+  outline: 3px solid #a1b69a;
+  outline-offset: 4px;
+}
+
+.page footer {
+  margin-top: 24px;
+  color: #75816f;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+@media (max-width: 540px) {
+  #quote-box {
+    padding: 28px 24px;
+  }
+
+  #text {
+    min-height: auto;
+    font-size: 24px;
+  }
+
+  .quote-mark {
+    height: 65px;
+    font-size: 85px;
+  }
+}
